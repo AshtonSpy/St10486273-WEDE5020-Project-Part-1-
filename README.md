@@ -9,3 +9,5 @@ site map
 
 pdf  for the proposal and site info
 [Lego site St10486273.pdf](https://github.com/user-attachments/files/22011798/Lego.site.St10486273.pdf)
+
+and the git hub link to my code https://github.com/AshtonSpy/St10486273-WEDE5020-Project-Part-1-.git
