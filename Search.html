@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results - The LEGO Database</title>
+</head>
+<body>
+    <table border="5" width="100%" height="100%">
+        <tr>
+            <td align="center">
+                <h1>Search Results</h1>
+
+                <script>
+                    // Get what the user typed
+                    const params = new URLSearchParams(window.location.search);
+                    const query = params.get("query") ? params.get("query").toLowerCase() : "";
+
+                    // Function to show one result
+                    function showResult(title, img, desc) {
+                        document.write("<table align='center' border='1' cellpadding='10'><tr>");
+                        document.write("<td><img src='" + img + "' alt='" + title + "' width='200' height='200'></td>");
+                        document.write("<td><h2>" + title + "</h2><p>" + desc + "</p></td>");
+                        document.write("</tr></table><br>");
+                    }
+
+                    // If user searched for discounts
+                    if (query.includes("discounts")) {
+                        document.write("<h2>Discounts</h2>");
+                        document.write("<p>There are no discounts available at this time.</p><br>");
+                    }
+
+                    // If user searched for something, show that one first
+                    if (query.includes("ninjago")) {
+                        showResult("LEGO Ninjago", "ninjago.jpg", "Epic battles with ninjas, dragons, and temples!");
+                    }
+                    if (query.includes("marvel")) {
+                        showResult("LEGO Marvel", "marvel.jpg", "Avengers, Spider-Man, Iron Man and more heroes!");
+                    }
+                    if (query.includes("starwars")) {
+                        showResult("LEGO Star Wars", "starwars.jpg", "Build X-Wings, the Millennium Falcon, and fight the Empire!");
+                    }
+                    if (query.includes("minifigures")) {
+                        showResult("LEGO Minifigures", "minifigures.jpg", "Collectible characters from many LEGO themes!");
+                    }
+
+                    // Always show all results (so the rest appear under it)
+                    showResult("LEGO Ninjago", "ninjago.jpg", "Epic battles with ninjas, dragons, and temples!");
+                    showResult("LEGO Marvel", "marvel.jpg", "Avengers, Spider-Man, Iron Man and more heroes!");
+                    showResult("LEGO Star Wars", "starwars.jpg", "Build X-Wings, the Millennium Falcon, and fight the Empire!");
+                    showResult("LEGO Minifigures", "minifigures.jpg", "Collectible characters from many LEGO themes!");
+                </script>
+
+                <br><br>
+                <a href="index.html"><button>Back to Home</button></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
