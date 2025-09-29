@@ -2,38 +2,39 @@
 <html>
 <head>
     <title>The LEGO Database</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table border="5" width="100%" height="100%">
-        <tr>
-            <td align="center">
-                <h1>THE LEGO DATABASE</h1>
-                <p>Search for any sets anywhere, anytime</p>
+    <header>
+        <h1>THE LEGO DATABASE</h1>
+        <p>Search for any sets anywhere, anytime</p>
+    </header>
 
-                <!-- Search form -->
-                <form action="search.html" method="get">
-                    <input type="text" name="query" placeholder="Search LEGO..." />
-                    <button type="submit">🔍</button>
-                </form>
+    <!-- Purpose Text -->
+    <section>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 1.2em;">
+            Welcome to <strong>The LEGO Database</strong>! 
+            This website allows you to search and browse LEGO sets sold on multiple websites. 
+            Whether you're looking for Marvel, Star Wars, Ninjago, or collectible Minifigures, 
+            you can quickly find them all here in one place.
+        </p>
+    </section>
 
-                <br>
+    <!-- Search form -->
+    <form action="search.html" method="get">
+        <input type="text" name="query" placeholder="Search LEGO..." />
+        <button type="submit">🔍</button>
+    </form>
 
-                <!-- Image tag replacing placeholder -->
-                <img src="Brick.jpg" alt="" width="200" height="200"><br><br>
+    <!-- Image -->
+    <img src="Brick.jpg" alt="LEGO Brick" width="200" height="200"><br><br>
 
-                <!-- Catalogue button -->
-                <a href="catalogue.html">
-                    <button>Catalogue Page</button>
-                </a>
+    <!-- Buttons -->
+    <a href="catalogue.html"><button>Catalogue Page</button></a>
+    <a href="contact.html"><button>Contact Us</button></a>
 
-                <br><br>
-
-                <!-- Contact Us button linking to contact.html -->
-                <a href="contact.html">
-                    <button>Contact Us</button>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <footer>
+        <p>&copy; 2025 The LEGO Database</p>
+    </footer>
 </body>
 </html>

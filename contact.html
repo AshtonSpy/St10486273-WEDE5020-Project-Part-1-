@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - LEGO Database</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table border="5" width="100%" height="100%">
-        <tr>
-            <td align="center">
-                <h1>Contact Us</h1>
-                <p>If you have any questions or suggestions, feel free to contact us!</p>
+    <header>
+        <h1>Contact Us</h1>
+        <p>If you have any questions, feel free to reach out!</p>
+    </header>
 
-                <!-- Contact form -->
-                <form action="#" method="post">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+    <!-- Contact form -->
+    <section class="form-section">
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" cols="40" required></textarea><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <button type="submit">Send Message</button>
-                </form>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-                <br>
-                <!-- Back to home page -->
-                <a href="index.html"><button>Back to Home</button></a>
-            </td>
-        </tr>
-    </table>
+    <nav>
+        <a href="index.html" class="btn">Back to Home</a>
+    </nav>
+
+    <footer>
+        <p>&copy; 2025 The LEGO Database</p>
+    </footer>
 </body>
 </html>
